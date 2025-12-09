@@ -37,8 +37,6 @@ ALTER TABLE dbo.actors
      CONSTRAINT DF_actors_isActive DEFAULT (1); -- Não esquecer o DEFAULT uma vez que a tabela já tem dados
 GO
 
-SELECT * FROM dbo.actors WHERE isActive = 1;
-
 IF EXISTS (SELECT *
            FROM   sys.objects
            WHERE  object_id = OBJECT_ID(N'[dbo].[tr_NoDelActor]')
