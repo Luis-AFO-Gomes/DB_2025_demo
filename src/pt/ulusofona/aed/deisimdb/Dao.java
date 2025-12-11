@@ -15,13 +15,13 @@ import java.sql.PreparedStatement;
 
 
 public class Dao {
-    String connectionUrl; 
-    String sqlserver = "//localhost:1433";
-    String databaseName="deisIMDB";
-    String user="sa";
-    String password="YourStrong!Passw0rd";//"ClientS@fe!Passw0rd";
-    String encrypt="true";
-    String trustServerCertificate="true";
+    private String connectionUrl; 
+    private String sqlserver = "//localhost:1433";
+    private String databaseName="deisIMDB";
+    private String user="sa";
+    private String password="YourStrong!Passw0rd";//"ClientS@fe!Passw0rd";
+    private String encrypt="true";
+    private String trustServerCertificate="true";
 
     public Dao() {
         connectionUrl = "jdbc:sqlserver:" + sqlserver + 

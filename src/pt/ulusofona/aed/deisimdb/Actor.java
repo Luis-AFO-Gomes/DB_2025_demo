@@ -10,14 +10,14 @@ import java.sql.ResultSet;
 
 public class Actor {
 
-    int actorId;
-    String actorName;
-    char actorGender;
-    Integer movieId = null;
-    TipoEntidade tipo;
-    Dao dao;
+    private int actorId;
+    private String actorName;
+    private char actorGender;
+    private Integer movieId = null;
+    private TipoEntidade tipo;
+    private Dao dao;
 
-    String generoLongo;
+    private String generoLongo;
 
 
     public Actor(int actorId, String actorName, char actorGender, int movieId) {
