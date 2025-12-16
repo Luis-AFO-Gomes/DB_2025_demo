@@ -147,3 +147,5 @@ BEGIN
     END
 END;
 GO       
+
+SELECT * FROM dbo.actors;
